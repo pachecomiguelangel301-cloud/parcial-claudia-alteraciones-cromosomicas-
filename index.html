@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Parcial Ultra-Completo: Genética Médica y Anomalías Cromosómicas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .option-label { transition: all 0.2s ease-in-out; }
+        .option-label:hover { transform: translateY(-1px); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen antialiased">
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 shadow-2xl text-center">
+            <h1 class="text-3xl font-extrabold text-teal-400 mb-2">Evaluación Parcial: Diagnóstico Citogenético por Fenotipo y Nomenclatura ISCN</h1>
+            <p class="text-slate-300 text-sm md:text-base">Nivel Experto • Correlación Clínica Avanzada, Casos Fenotípicos, Reordenamientos Estructurales, Mecanismos Meióticos y Cromatina Sexual (50 Preguntas)</p>
+            <div class="mt-4 inline-flex items-center gap-4 bg-slate-950 px-4 py-2 rounded-lg border border-slate-800 text-sm">
+                <span class="text-teal-400 font-semibold">Total de Preguntas: 50</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-amber-400 font-semibold" id="timer">Tiempo transcurrido: 00:00</span>
+            </div>
+        </header>
+
+        <!-- Formulario del Examen -->
+        <form id="examForm" class="space-y-6">
+
+            <!-- PREGUNTA 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 1: Síndrome de Down • Trisomía Libre</div>
+                <h3 class="text-lg font-bold text-white mb-3">1. Un recién nacido presenta hipotonía muscular, puente nasal deprimido, pliegue epicántico, manos y pies pequeños con pliegue palmar único y retraso cognitivo. El análisis citogenético revela una trisomía completa del cromosoma 21 en todas las células. ¿Cuál es la nomenclatura ISCN correcta?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q1" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XY,+21 (o 47,XX,+21)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q1" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">46,XX,der(14;21)(q10;q10),+21</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q1" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XX,+18</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q1" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">45,X</span>
+                    </label>
+                </div>
+                <div id="feedback-q1" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 2: Síndrome de Edwards • Trisomía 18</div>
+                <h3 class="text-lg font-bold text-white mb-3">2. Lactante con retraso severo del desarrollo físico y cognitivo, malformaciones craneofaciales (micrognatia, cara plana), manos cerradas con dedos superpuestos y pies en mecedora. ¿Qué alteración cromosómica presenta?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q2" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre del cromosoma 18 (47,XX,+18 o 47,XY,+18)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q2" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre del cromosoma 13 (47,XY,+13)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q2" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía del cromosoma X (45,X)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q2" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción 5p (Síndrome de Cri-du-chat)</span>
+                    </label>
+                </div>
+                <div id="feedback-q2" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 3: Síndrome de Patau • Trisomía 13</div>
+                <h3 class="text-lg font-bold text-white mb-3">3. Neonato que exhibe labio y/o paladar hendido, microcefalia, polidactilia y malformaciones renales graves. ¿Cuál es el diagnóstico citogenético asociado?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q3" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre del cromosoma 13 (47,XY,+13 o 47,XX,+13)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q3" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre del cromosoma 21 (47,XX,+21)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q3" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Tetrasomía sexual 48,XXXY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q3" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Triploidía 69,XXX</span>
+                    </label>
+                </div>
+                <div id="feedback-q3" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 4 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 4: Síndrome de Klinefelter • Hipogonadismo y Ginecomastia</div>
+                <h3 class="text-lg font-bold text-white mb-3">4. Adolescente masculino evaluado por hipogonadismo (testículos pequeños), ginecomastia, estatura alta e infertilidad. ¿Qué cariotipo presenta?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q4" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q4" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XYY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q4" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">45,X</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q4" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXX</span>
+                    </label>
+                </div>
+                <div id="feedback-q4" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 5 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 5: Síndrome de Turner • Talla Baja y Cuello Alado</div>
+                <h3 class="text-lg font-bold text-white mb-3">5. Paciente femenina que consulta por talla baja, cuello corto/alado (pterygium colli) y disgenesia gonadal con amenorrea primaria. ¿Cuál es sua fórmula cromosómica?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q5" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">45,X</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q5" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXX</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q5" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">46,XX,del(5)(p15)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q5" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">46,XX,i(X)(q10)</span>
+                    </label>
+                </div>
+                <div id="feedback-q5" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 6 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 6: Síndrome de la Triple X • Conteo de Cuerpos de Barr</div>
+                <h3 class="text-lg font-bold text-white mb-3">6. Una mujer con estatura alta, desarrollo cognitivo ligeramente alterado y fertilidad normal es diagnosticada con <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">47,XXX</code>. ¿Cuántos cuerpos de Barr se detectan en sus células?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q6" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">2 cuerpos de Barr (3 cromosomas X menos 1)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q6" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">1 cuerpo de Barr</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q6" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">3 cuerpos de Barr</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q6" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">0 cuerpos de Barr</span>
+                    </label>
+                </div>
+                <div id="feedback-q6" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 7 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 7: Síndrome de Jacob • Talla Alta y Acné Severo</div>
+                <h3 class="text-lg font-bold text-white mb-3">7. Joven varón evaluado por talla alta, acné severo, dificultades de aprendizaje e hiperactividad. Su cariotipo muestra un cromosoma Y extra. ¿Cuál es la nomenclatura correcta?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q7" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XYY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q7" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q7" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">48,XXXY</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q7" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">69,XXY</span>
+                    </label>
+                </div>
+                <div id="feedback-q7" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 8 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 8: Tetrasomía Sexual (48,XXXY) • Comparación de Barr</div>
+                <h3 class="text-lg font-bold text-white mb-3">8. Un paciente con fenotipo masculino severamente afectado (hipogonadismo, ginecomastia, estatura alta) presenta 48 cromosomas con tres cromosomas X (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">48,XXXY</code>). ¿Cuántos cuerpos de Barr se observan (recordando la corrección estricta basada en el número de X)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q8" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">2 cuerpos de Barr (3 cromosomas X menos 1 activo)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q8" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">3 cuerpos de Barr</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q8" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">4 cuerpos de Barr</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q8" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">1 cuerpo de Barr</span>
+                    </label>
+                </div>
+                <div id="feedback-q8" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 9 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 9: Triploidía • Aborto Espontáneo</div>
+                <h3 class="text-lg font-bold text-white mb-3">9. Restos fetales de un aborto espontáneo con malformaciones graves múltiples y 69 cromosomas totales (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">69,XXX</code>). ¿Cómo se denomina esta anomalía?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q9" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Triploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q9" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Tetraploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q9" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Doble aneuploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q9" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Mosaicismo simple</span>
+                    </label>
+                </div>
+                <div id="feedback-q9" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 10 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 10: Tetraploidía • 92 Cromosomas</div>
+                <h3 class="text-lg font-bold text-white mb-3">10. Un cariotipo con 92 cromosomas (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">92,XXXX</code>) asociado a letalidad fetal temprana e incompatibilidad con la vida se clasifica como:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q10" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Tetraploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q10" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Triploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q10" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía múltiple</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q10" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Translocación Robertsonian</span>
+                    </label>
+                </div>
+                <div id="feedback-q10" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 11 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 11: Doble Aneuploidía • Klinefelter + Down</div>
+                <h3 class="text-lg font-bold text-white mb-3">11. Paciente varón que manifiesta simultáneamente rasgos típicos del Síndrome de Down y del Síndrome de Klinefelter. Su cariotipo es <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">48,XXY,+21</code>. ¿Cómo se denomina esta condición?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q11" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Doble aneuploidía</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q11" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Mosaicismo celular puro</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q11" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Triploidía parcial</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q11" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Translocación recíproca</span>
+                    </label>
+                </div>
+                <div id="feedback-q11" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 12 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 12: Mosaicismo • Turner Mosaicista (45,X/46,XX)</div>
+                <h3 class="text-lg font-bold text-white mb-3">12. Paciente con clínica atenuada de Síndrome de Turner cuyo cariotipo muestra dos poblaciones celulares diferentes (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">45,X / 46,XX</code>). ¿Qué diagnóstico recibe?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q12" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía en mosaico (ej. Turner)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q12" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre completa</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q12" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Quimerismo dispérmico</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q12" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Tetrasomía sexual</span>
+                    </label>
+                </div>
+                <div id="feedback-q12" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 13 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 13: Síndrome de Down por Translocación Robertsoniana</div>
+                <h3 class="text-lg font-bold text-white mb-3">13. Niño con fenotipo característico de Síndrome de Down cuyos padres son sanos portadores, con cariotipo del niño que reporta <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,der(14;21)(q10;q10),+21</code>. ¿Cuál es la alteración estructural subyacente?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q13" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Down por translocación robertsoniana</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q13" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Cromosoma en anillo 21</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q13" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Isocromosoma 21q</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q13" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción intersticial del cromosoma 14</span>
+                    </label>
+                </div>
+                <div id="feedback-q13" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 14 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 14: Síndrome de Cri-du-chat • Llanto de Gato</div>
+                <h3 class="text-lg font-bold text-white mb-3">14. Neonato que presenta un llanto agudo y plaintivo similar al maullido de un gato, microcefalia, hipotonía y retraso severo. ¿Qué anomalía cromosómica estructural presenta (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,del(5)(p15)</code>)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q14" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Cri-du-chat (deleción del brazo corto del cromosoma 5)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q14" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Patau</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q14" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Edwards</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q14" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Leucemia Mieloide Crónica</span>
+                    </label>
+                </div>
+                <div id="feedback-q14" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 15 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 15: Cromosoma en Anillo • Malformaciones Congénitas</div>
+                <h3 class="text-lg font-bold text-white mb-3">15. Paciente pediátrico con retraso del desarrollo, epilepsia y malformaciones físicas cuyo cariotipo revela la fusión de los extremos teloméricos de un cromosoma formando una estructura circular (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,r(5)</code>). ¿Cómo se clasifica?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q15" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Cromosoma en anillo (anomalía estructural)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q15" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Isocromosoma</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q15" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Aneuploidía numérica pura</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q15" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Translocación Robertsonian</span>
+                    </label>
+                </div>
+                <div id="feedback-q15" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 16 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 16: Isocromosoma • Fenotipo Turner-like</div>
+                <h3 class="text-lg font-bold text-white mb-3">16. Paciente con clínica similar a Síndrome de Turner (talla baja, disgenesia gonadal) pero con un cariotipo que muestra un cromosoma anormal con dos brazos largos idénticos por división transversal del centrómero (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,i(X)(q10)</code>). ¿Qué entidad es?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q16" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Isocromosoma (estructural)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q16" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía pura 45,X</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q16" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía sexual triple X</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q16" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Inversión pericéntrica</span>
+                    </label>
+                </div>
+                <div id="feedback-q16" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 17 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 17: Leucemia Mieloide Crónica • Esplenomegalia y Fatiga</div>
+                <h3 class="text-lg font-bold text-white mb-3">17. Adulto con fatiga, pérdida de peso, esplenomegalia y recuento leucocitario masivo. El estudio onco-citogenético reporta el cromosoma Filadelfia <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,t(9;22)(q34;q11)</code>. ¿Cuál es el diagnóstico clínico?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q17" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Leucemia Mieloide Crónica (LMC)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q17" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Down</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q17" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Patau</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q17" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Edwards</span>
+                    </label>
+                </div>
+                <div id="feedback-q17" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 18 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 18: Análisis Fenotípico Diferencial • Pies en Mecedora</div>
+                <h3 class="text-lg font-bold text-white mb-3">18. Si un caso clínico describe "pies en mecedora, micrognatia y manos cerradas con índice sobre anular", ¿cuál de los siguientes cariotipos se debe sospechar inmediatamente?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q18" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XX,+18 (Síndrome de Edwards)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q18" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XY,+21 (Síndrome de Down)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q18" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">45,X (Síndrome de Turner)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q18" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXY (Síndrome de Klinefelter)</span>
+                    </label>
+                </div>
+                <div id="feedback-q18" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 19 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 19: Análisis Fenotípico Diferencial • Holoprosencefalia y Polidactilia</div>
+                <h3 class="text-lg font-bold text-white mb-3">19. Ante un reporte ecográfico y clínico fetal con holoprosencefalia, labio leporino bilateral y polidactilia postaxial, ¿qué alteración cromosómica es la causa más probable?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q19" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía 13 (Síndrome de Patau)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q19" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía 21 (Síndrome de Down)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q19" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía 5p (Cri-du-chat)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q19" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía sexual XYY</span>
+                    </label>
+                </div>
+                <div id="feedback-q19" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 20 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 20: Análisis Fenotípico • Ginecomastia e Infertilidad en Varón</div>
+                <h3 class="text-lg font-bold text-white mb-3">20. Un paciente varón adulto acude por infertilidad, testículos firmes pequeños y ginecomastia leve. ¿Cuál es el diagnóstico clínico y citogenético previsible?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q20" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Klinefelter (47,XXY)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q20" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Turner (45,X)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q20" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Jacob (47,XYY)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q20" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía 18</span>
+                    </label>
+                </div>
+                <div id="feedback-q20" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTAS 21 a 50 (Casos Clínicos Extensos y Alta Discriminación) -->
+            <!-- PREGUNTA 21 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 21: Citogenética y Meiosis I</div>
+                <h3 class="text-lg font-bold text-white mb-3">21. ¿Qué tipo de error en la gametogénesis explica que un gameto porte dos cromosomas homólogos diferentes (de origen materno y paterno mezclados) tras la primera división meiótica?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q21" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">No disyunción en la Meiosis I</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q21" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">No disyunción en la Meiosis II</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q21" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Endorreduplicación mitótica</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q21" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Fusión céntrica robertsoniana</span>
+                    </label>
+                </div>
+                <div id="feedback-q21" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 22 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 22: Citogenética y Meiosis II</div>
+                <h3 class="text-lg font-bold text-white mb-3">22. ¿Qué caracteriza a un gameto originado por un evento de no disyunción exclusivamente en la <b>Meiosis II</b>?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q22" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Porta dos cromátidas hermanas idénticas del mismo cromosoma parental.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q22" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Porta un homólogo materno y un homólogo paterno completo.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q22" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Carece por completo de material nuclear.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q22" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Presenta triploidía obligatoria en el cigoto resultante.</span>
+                    </label>
+                </div>
+                <div id="feedback-q22" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 23 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 23: Definición de Aneuploidía</div>
+                <h3 class="text-lg font-bold text-white mb-3">23. Desde la perspectiva de la genética clínica, ¿cómo se define formalmente una <b>aneuploidía</b>?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q23" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una ganancia o pérdida de uno o pocos cromosomas individuales respecto al número diploide normal (2n).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q23" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">La multiplicación de juegos haploides completos (ej. 69 o 92 cromosomas).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q23" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Un reordenamiento intrabascular sin pérdida neta de pares de bases.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q23" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">La inactivación fisiológica del cromosoma X en mujeres sanas.</span>
+                    </label>
+                </div>
+                <div id="feedback-q23" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 24 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 24: Cromatina Sexual en Turner</div>
+                <h3 class="text-lg font-bold text-white mb-3">24. En una paciente con Síndrome de Turner (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">45,X</code>), ¿cuál es el resultado esperado en la prueba de cromatina nuclear (cuerpo de Barr)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q24" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Negativa (0 cuerpos de Barr)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q24" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva (1 cuerpo de Barr)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q24" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva doble (2 cuerpos de Barr)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q24" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva variable según el ciclo menstrual</span>
+                    </label>
+                </div>
+                <div id="feedback-q24" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 25 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 25: Cromatina Sexual en Klinefelter</div>
+                <h3 class="text-lg font-bold text-white mb-3">25. En un paciente con Síndrome de Klinefelter clásico (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">47,XXY</code>), ¿cómo se interpreta la tinción para cromatina sexual (cuerpo de Barr)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q25" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva (1 cuerpo de Barr presente en los núcleos)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q25" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Negativa (0 cuerpos de Barr)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q25" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva con 2 cuerpos de Barr</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q25" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Positiva con 3 cuerpos de Barr</span>
+                    </label>
+                </div>
+                <div id="feedback-q25" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 26 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 26: Concepto de Translocación Robertsoniana</div>
+                <h3 class="text-lg font-bold text-white mb-3">26. ¿Qué cromosomas humanos son susceptibles de participar en una <b>translocación robertsoniana</b> debido a su morfología acrocéntrica?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q26" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Los cromosomas 13, 14, 15, 21 y 22</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q26" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Los cromosomas 1, 2, 3, 4 y 5</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q26" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Exclusivamente los cromosomas X e Y</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q26" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Todos los cromosomas metacéntricos del grupo C</span>
+                    </label>
+                </div>
+                <div id="feedback-q26" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 27 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 27: Consecuencias de Translocación Robertsoniana Equilibrada</div>
+                <h3 class="text-lg font-bold text-white mb-3">27. Un progenitor sano presenta una translocación robertsoniana equilibrada <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">45,XX,der(14;21)</code>. ¿Cuál es su riesgo clínico principal en la descendencia?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q27" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Riesgo elevado de abortos recurrentes y descendencia con Síndrome de Down por segregación meiótica anormal.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q27" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Desarrollo inevitable de Leucemia Mieloide Crónica en la adultez.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q27" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Esterilidad masculina absoluta sin formación de gametos viables.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q27" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Ningún riesgo reproductivo, ya que el fenotipo del padre es completamente normal.</span>
+                    </label>
+                </div>
+                <div id="feedback-q27" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 28 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 28: Mosaicismo Somático vs Germinal</div>
+                <h3 class="text-lg font-bold text-white mb-3">28. ¿Qué diferencia clínica fundamental existe entre un paciente con trisomía 21 en mosaico y uno con trisomía libre completa?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q28" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">El mosaicismo suele presentar un fenotipo clínico más atenuado o variable debido a la presencia de la línea celular normal.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q28" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">El mosaicismo es siempre letal durante el periodo embrionario temprano.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q28" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">La trisomía libre se adquiere por contagio viral posnatal.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q28" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">No hay ninguna diferencia en la severidad ni en el pronóstico orgánico.</span>
+                    </label>
+                </div>
+                <div id="feedback-q28" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 29 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 29: Nomenclatura ISCN y Bandas Cromosómicas</div>
+                <h3 class="text-lg font-bold text-white mb-3">29. En la nomenclatura ISCN <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">46,XX,del(5)(p15)</code>, ¿qué significa el número <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">15</code> dentro del segundo paréntesis?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q29" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">La banda citogenética específica en el brazo corto donde se localiza el punto de rotura y deleción.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q29" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">El número de pares de bases eliminadas en megabases.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q29" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">La edad gestacional en semanas de la madre al momento del diagnóstico.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q29" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">El recuento total de cromosomas acrocéntricos remanentes.</span>
+                    </label>
+                </div>
+                <div id="feedback-q29" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 30 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 30: Diagnóstico Integral Citogenético</div>
+                <h3 class="text-lg font-bold text-white mb-3">30. ¿Cuál es el método de laboratorio estándar de primera línea utilizado en la práctica clínica para visualizar cariotipos humanos y detectar anomalías numéricas y estructurales mayores?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q30" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Cultivo celular de linfocitos de sangre periférica con bandeo G (tinción con Giemsa).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q30" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Secuenciación de exoma completo (WES) sin cultivo previo.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q30" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Electroforesis capilar de fragmentos de ADN mitocondrial.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q30" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Ensayo de PCR en tiempo real cuantitativa para beta-globina.</span>
+                    </label>
+                </div>
+                <div id="feedback-q30" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTAS 31 a 50 -->
+            <!-- PREGUNTA 31 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 31: Fenotipo Down • Cardiopatías</div>
+                <h3 class="text-lg font-bold text-white mb-3">31. Además de la discapacidad intelectual y los rasgos faciales, ¿qué patología orgánica congénita concurre frecuentemente en más del 40-50% de los pacientes con trisomía 21?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q31" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Defectos cardíacos congénitos (ej. comunicación auriculoventricular)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q31" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Insuficiencia renal crónica terminal bilateral por displasia</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q31" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Atresia esofágica completa con fístula traqueoesofágica distal</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q31" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Holoprosencefalia alobar masiva</span>
+                    </label>
+                </div>
+                <div id="feedback-q31" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 32 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 32: Fenotipo Edwards • Pronóstico Vital</div>
+                <h3 class="text-lg font-bold text-white mb-3">32. ¿Cuál es el pronóstico vital característico de los neonatos diagnosticados con Síndrome de Edwards (Trisomía 18)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q32" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Alta mortalidad temprana, con la gran mayoría de los infantes falleciendo durante los primeros meses de vida.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q32" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Esperanza de vida normal superior a los 70 años con tratamiento hormonal sustitutivo.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q32" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Sobrevivencia plena sin compromiso sistémico ni cardiopatías.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q32" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Remisión espontánea de la trisomía por corrección mitótica.</span>
+                    </label>
+                </div>
+                <div id="feedback-q32" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 33 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 33: Fenotipo Patau • Anomalías del Sistema Nervioso</div>
+                <h3 class="text-lg font-bold text-white mb-3">33. La severa malformación cerebral caracterizada por la falta de división de los hemisferios cerebrales, común en el Síndrome de Patau, se denomina:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q33" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Holoprosencefalia</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q33" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Hidrocefalia normotensa</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q33" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Anencefalia parietal aislada</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q33" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Esquizencefalia bilateral</span>
+                    </label>
+                </div>
+                <div id="feedback-q33" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 34 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 34: Síndrome de Turner • Linfedema</div>
+                <h3 class="text-lg font-bold text-white mb-3">34. Además de la talla baja y el cuello alado, ¿qué signo clínico neonatal es altamente sugerente de Síndrome de Turner (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">45,X</code>)?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q34" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Linfedema congénito en dorso de manos y pies</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q34" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Macrocefalia extrema con hidrocefalia obstructiva</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q34" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Polidactilia hexadactilar simétrica</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q34" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Hernia diafragmática bilateral masiva</span>
+                    </label>
+                </div>
+                <div id="feedback-q34" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 35 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 35: Síndrome de Klinefelter • Patrón Hormonal</div>
+                <h3 class="text-lg font-bold text-white mb-3">35. En el perfil endocrino de un paciente con Síndrome de Klinefelter (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">47,XXY</code>), ¿qué hallazgos son típicos en su laboratorio?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q35" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Hipogonadismo hipergonadotrópico (testosterona baja, FSH y LH elevadas)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q35" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Hipogonadismo hipogonadotrópico (testosterona baja, FSH y LH deprimidas)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q35" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Hiperandrogenismo severo con niveles de testosterona diez veces sobre lo normal</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q35" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Perfil hormonal completamente normal sin alteración del eje</span>
+                    </label>
+                </div>
+                <div id="feedback-q35" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 36 MODIFICADA -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 36: Citogenética • Anticoagulante para Cultivos Celulares</div>
+                <h3 class="text-lg font-bold text-white mb-3">36. ¿Cuál es el anticoagulante de elección que se debe utilizar obligatoriamente para la toma de muestras de sangre periférica destinadas a cultivos celulares y estudio de cariotipo, evitando el uso de EDTA u otros agentes tóxicos para la división mitótica?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q36" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Heparina de sodio</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q36" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Ácido etilendiaminotetraacético (EDTA)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q36" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Citrato de sodio al 3.2%</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q36" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Oxalato de potasio</span>
+                    </label>
+                </div>
+                <div id="feedback-q36" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 37 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 37: Mosaicismo • Distribución Tisular</div>
+                <h3 class="text-lg font-bold text-white mb-3">37. ¿De qué depende principalmente la gravedad clínica en un paciente que presenta mosaicismo cromosómico?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q37" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Del porcentaje de células anormales y de qué tejidos u órganos estén afectados por dicha línea celular.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q37" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Del grupo sanguíneo del paciente al nacer.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q37" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">De la cantidad de agua consumida por la madre durante la gestación.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q37" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Del número de hermanos varones que tenga el probando.</span>
+                    </label>
+                </div>
+                <div id="feedback-q37" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 38 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 38: Nomenclatura ISCN • Abreviaturas</div>
+                <h3 class="text-lg font-bold text-white mb-3">38. En la nomenclatura citogenética ISCN, ¿qué significa la abreviatura <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">der</code>?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q38" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Cromosoma derivativo (cromosoma estructuralmente alterado que ha sufrido reordenamientos complejos).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q38" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción terminal simple de brazos largos.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q38" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Duplicación invertida del centrómero.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q38" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Doble recuento cromosómico por tetraploidía.</span>
+                    </label>
+                </div>
+                <div id="feedback-q38" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 39 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 39: Diagnóstico Prenatal • Amniocentesis</div>
+                <h3 class="text-lg font-bold text-white mb-3">39. ¿Cuál es el tejido fetal principal analizado mediante amniocentesis en la semana 16 de gestación para obtener el cariotipo bandeo G?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q39" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Amniocitos (células fetales descamadas en el líquido amniótico)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q39" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Eritrocitos nucleados de la sangre materna</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q39" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Células del epitelio cervical materno</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q39" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Plasma seminal centrifugado</span>
+                    </label>
+                </div>
+                <div id="feedback-q39" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 40 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 40: Consejo Genético y Recurrencia</div>
+                <h3 class="text-lg font-bold text-white mb-3">40. En el consejo genético, ¿qué familia presenta mayor riesgo de recurrencia para tener otro hijo con Síndrome de Down?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q40" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una pareja donde uno de los progenitores es portador de una translocación robertsoniana t(14;21).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q40" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una pareja joven cuyo primer hijo tuvo trisomía 21 libre por no disyunción esporádica.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q40" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Un varón con cariotipo normal y espermiograma fertilizante óptimo.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q40" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una familia sin antecedentes con cariotipos parentales 46,XX y 46,XY normales.</span>
+                    </label>
+                </div>
+                <div id="feedback-q40" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTAS 41 a 50 -->
+            <!-- PREGUNTA 41 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 41: Fenotipo • Puente Nasal Deprimido y Pliegue Único</div>
+                <h3 class="text-lg font-bold text-white mb-3">41. La combinación sintomatológica de puente nasal deprimido, epicanto, hipotonía y pliegue palmar único orienta inequívocamente a:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q41" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía 21 (Síndrome de Down)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q41" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía 18 (Síndrome de Edwards)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q41" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía X (Síndrome de Turner)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q41" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción 5p (Cri-du-chat)</span>
+                    </label>
+                </div>
+                <div id="feedback-q41" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 42 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 42: Fenotipo • Dedos Superpuestos</div>
+                <h3 class="text-lg font-bold text-white mb-3">42. El hallazgo físico de manos cerradas con dedos superpuestos (el dedo índice cabalgando sobre el medio y el meñique sobre el anular) es clásico de:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q42" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Edwards (Trisomía 18)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q42" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Patau (Trisomía 13)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q42" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Klinefelter (47,XXY)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q42" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Jacob (47,XYY)</span>
+                    </label>
+                </div>
+                <div id="feedback-q42" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 43 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 43: Fenotipo • Cuello Alado</div>
+                <h3 class="text-lg font-bold text-white mb-3">43. La presencia de cuello alado (<cite>pterygium colli</cite>) y linfedema periférico en una recién nacida sugiere:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q43" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Turner (45,X)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q43" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de la Triple X (47,XXX)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q43" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Síndrome de Patau</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q43" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Tetraploidía fetal</span>
+                    </label>
+                </div>
+                <div id="feedback-q43" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 44 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 44: Fenotipo • Llanto Agudo</div>
+                <h3 class="text-lg font-bold text-white mb-3">44. Un lactante con llanto agudo característico parecido al maullido de un gato tiene una microdeleción cromosómica identificada como:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q44" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción del brazo corto del cromosoma 5 (5p15)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q44" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Deleción del brazo largo del cromosoma 21</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q44" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Isocromosoma Xq</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q44" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Translocación t(9;22)</span>
+                    </label>
+                </div>
+                <div id="feedback-q44" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 45 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 45: Conteo Exacto de Cuerpos de Barr (47,XXX vs 48,XXXY)</div>
+                <h3 class="text-lg font-bold text-white mb-3">45. Si se evalúa citológicamente la mucosa bucal de una paciente con cariotipo <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">47,XXX</code> y de un paciente varón con cariotipo <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">48,XXXY</code>, ¿cuántos cuerpos de Barr se observan en cada uno respectivamente?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q45" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">2 cuerpos de Barr en 47,XXX y 2 cuerpos de Barr en 48,XXXY (ambos tienen exactamente 3 cromosomas X, por lo que 3 - 1 = 2).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q45" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">2 cuerpos de Barr en 47,XXX y 3 cuerpos de Barr en 48,XXXY.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q45" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">1 cuerpo de Barr en 47,XXX y 2 cuerpos de Barr en 48,XXXY.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q45" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">3 cuerpos de Barr en ambos casos.</span>
+                    </label>
+                </div>
+                <div id="feedback-q45" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 46 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 46: Mosaicismo Placentario Confinado</div>
+                <h3 class="text-lg font-bold text-white mb-3">46. En diagnóstico prenatal por biopsia de vellosidades coriales se detecta una línea trisómica que no está presente en el líquido amniótico posterior. ¿Cómo se denomina este fenómeno?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q46" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Mosaicismo placentario confinado (CPM)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q46" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Trisomía libre completa generalizada</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q46" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Quimerismo sanguíneo gemelar</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q46" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Translocación de novo equilibrada</span>
+                    </label>
+                </div>
+                <div id="feedback-q46" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 47 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 47: Isocromosoma del X • Bases Moleculares</div>
+                <h3 class="text-lg font-bold text-white mb-3">47. El isocromosoma del brazo largo del cromosoma X (<code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">i(X)(q10)</code>) genera simultáneamente una condición de:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q47" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Monosomía parcial para el brazo corto (p) y trisomía parcial para el brazo largo (q).</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q47" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Pérdida absoluta de todo el cromosoma X sin excepciones.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q47" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Duplicación simétrica de ambos brazos cromosómicos sin pérdida tisular.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q47" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Conversión del cromosoma sexual en un autosoma metacéntrico.</span>
+                    </label>
+                </div>
+                <div id="feedback-q47" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 48 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 48: Cromosoma Filadelfia • Oncogénesis</div>
+                <h3 class="text-lg font-bold text-white mb-3">48. En el contexto de la Leucemia Mieloide Crónica, la formación del oncogén híbrido <code class="bg-slate-950 px-1.5 py-0.5 rounded text-teal-300">BCR-ABL1</code> se debe específicamente a:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q48" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una translocación recíproca t(9;22)(q34;q11)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q48" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una translocación robertsoniana 14;21</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q48" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una no disyunción mitótica del cromosoma 22</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q48" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Una monosomía parcial del cromosoma 9</span>
+                    </label>
+                </div>
+                <div id="feedback-q48" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 49 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 49: Correlación Fenotípica Avanzada • Aneuploidías</div>
+                <h3 class="text-lg font-bold text-white mb-3">49. Relacione el fenotipo clásico de "llanto agudo de gato, microcefalia y retraso mental" con la nomenclatura citogenética exacta:</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q49" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">46,XX,del(5)(p15)</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q49" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XX,+21</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q49" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">45,X</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q49" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">47,XXY</span>
+                    </label>
+                </div>
+                <div id="feedback-q49" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- PREGUNTA 50 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso 50: Síntesis y Dictamen Citogenético Clínico</div>
+                <h3 class="text-lg font-bold text-white mb-3">50. ¿Cuál es la utilidad clínica imperativa de un informe de cariotipo bandeo G correctamente emitido en un paciente con dismorfias congénitas?</h3>
+                <div class="space-y-2">
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q50" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Proporcionar diagnóstico definitivo, guiar el manejo multidisciplinario de anomalías asociadas y otorgar un adecuado asesoramiento reproductivo familiar.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q50" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Desarrollar patologías infecciosas bacterianas agudas en sala de urgencias.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q50" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Sustituir por completo las pruebas de función endocrina y ecocardiografía.</span>
+                    </label>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
+                        <input type="radio" name="q50" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
+                        <span class="text-sm text-slate-200">Establecer el perfil farmacogenético hepático para metabolizar analgésicos.</span>
+                    </label>
+                </div>
+                <div id="feedback-q50" class="mt-3 text-sm font-medium hidden"></div>
+            </div>
+
+            <!-- Botón de Envío y Resultados -->
+            <div class="pt-4 text-center">
+                <button type="button" id="submitBtn" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold px-8 py-3 rounded-xl shadow-lg transition-all transform hover:scale-105">
+                    Calificar Examen Completo (50 Preguntas)
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Tarjeta de Resultados -->
+        <div id="resultsCard" class="hidden mt-8 bg-slate-900 border-2 border-teal-500/50 rounded-2xl p-6 shadow-2xl text-center">
+            <h2 class="text-2xl font-bold text-teal-400 mb-2">Resultados de tu Evaluación</h2>
+            <p class="text-3xl font-extrabold text-white mb-4" id="scoreDisplay">0 / 50 (0%)</p>
+            <p class="text-slate-300 text-sm" id="feedbackMessage"></p>
+        </div>
+
+    </div>
+
+    <script>
+        // Temporizador interactivo
+        let seconds = 0;
+        const timerEl = document.getElementById('timer');
+        setInterval(() => {
+            seconds++;
+            const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+            const secs = (seconds % 60).toString().padStart(2, '0');
+            timerEl.textContent = `Tiempo transcurrido: ${mins}:${secs}`;
+        }, 1000);
+
+        // Clave de respuestas correctas para las 50 preguntas
+        const correctAnswers = {
+            q1: 'a', q2: 'a', q3: 'a', q4: 'a', q5: 'a', q6: 'a', q7: 'a', q8: 'a', q9: 'a', q10: 'a',
+            q11: 'a', q12: 'a', q13: 'a', q14: 'a', q15: 'a', q16: 'a', q17: 'a', q18: 'a', q19: 'a', q20: 'a',
+            q21: 'a', q22: 'a', q23: 'a', q24: 'a', q25: 'a', q26: 'a', q27: 'a', q28: 'a', q29: 'a', q30: 'a',
+            q31: 'a', q32: 'a', q33: 'a', q34: 'a', q35: 'a', q36: 'a', q37: 'a', q38: 'a', q39: 'a', q40: 'a',
+            q41: 'a', q42: 'a', q43: 'a', q44: 'a', q45: 'a', q46: 'a', q47: 'a', q48: 'a', q49: 'a', q50: 'a'
+        };
+
+        const explanations = {
+            q1: "Correcto. El fenotipo de Down (hipotonía, puente nasal deprimido, pliegue palmar único) corresponde a la Trisomía 21 libre (47,XX,+21 o 47,XY,+21).",
+            q2: "Correcto. Pies en mecedora, micrognatia y manos con dedos superpuestos son característicos del Síndrome de Edwards (Trisomía 18).",
+            q3: "Correcto. Holoprosencefalia, labio leporino y polidactilia definen al Síndrome de Patau (Trisomía 13).",
+            q4: "Correcto. Hipogonadismo, ginecomastia y estatura alta en varones corresponden al Síndrome de Klinefelter (47,XXY).",
+            q5: "Correcto. Talla baja, cuello alado y disgenesia gonadal definen al Síndrome de Turner (45,X).",
+            q6: "Correcto. En 47,XXX se tienen 3 cromosomas X; restando 1 activo, se obtienen 2 cuerpos de Barr.",
+            q7: "Correcto. Talla alta, acné severo y problemas de conducta en varones corresponden al Síndrome de Jacob (47,XYY).",
+            q8: "Correcto. En 48,XXXY hay 3 cromosomas X totales. Aplicando la regla estricta (N_X - 1), se obtienen 2 cuerpos de Barr (¡Concepto corregido con éxito!).",
+            q9: "Correcto. 69 cromosomas representan tres juegos haploides completos (Triploidía).",
+            q10: "Correcto. 92 cromosomas representan cuatro juegos haploides completos (Tetraploidía).",
+            q11: "Correcto. La coexistencia de Klinefelter y Down en un mismo individuo se denomina Doble Aneuploidía (48,XXY,+21).",
+            q12: "Correcto. La presencia de líneas celulares 45,X y 46,XX define una Monosomía en mosaico.",
+            q13: "Correcto. der(14;21) representa una translocación robertsoniana causante de Síndrome de Down familiar.",
+            q14: "Correcto. Llanto de gato y del(5)(p15) corresponden al Síndrome de Cri-du-chat.",
+            q15: "Correcto. La formación de estructuras circulares teloméricas define al cromosoma en anillo r(5).",
+            q16: "Correcto. i(X)(q10) representa un isocromosoma del brazo largo del X con fenotipo Turner-like.",
+            q17: "Correcto. t(9;22) da origen al cromosoma Filadelfia característico de la Leucemia Mieloide Crónica (LMC).",
+            q18: "Correcto. Pies en mecedora y dedos superpuestos son el sello clínico de la Trisomía 18 (Edwards).",
+            q19: "Correcto. Holoprosencefalia y polidactilia orientan a Trisomía 13 (Patau).",
+            q20: "Correcto. Ginecomastia e hipogonadismo en varón indican Klinefelter (47,XXY).",
+            q21: "Correcto. La no disyunción en Meiosis I produce gametos con homólogos parentales mixtos.",
+            q22: "Correcto. La no disyunción en Meiosis II produce gametos con cromátidas hermanas idénticas duplicadas.",
+            q23: "Correcto. La aneuploidía es la ganancia o pérdida de cromosomas individuales.",
+            q24: "Correcto. En Turner (45,X) hay un solo X, por lo que no hay inactivación y la cromatina sexual es negativa (0 Barr).",
+            q25: "Correcto. En Klinefelter (47,XXY) hay 2 cromosomas X, resultando en 1 cuerpo de Barr positivo.",
+            q26: "Correcto. Los acrocéntricos humanos son 13, 14, 15, 21 y 22.",
+            q27: "Correcto. Los portadores de translocaciones robertsonianas equilibradas tienen riesgo de abortos y descendencia aneuploide.",
+            q28: "Correcto. El mosaicismo mitótico atenúa la severidad fenotípica respecto a la trisomía libre completa.",
+            q29: "Correcto. El número 15 dentro del segundo paréntesis indica la banda citogenética del punto de rotura.",
+            q30: "Correcto. El cultivo de linfocitos con bandeo G es la técnica citogenética estándar de primera línea.",
+            q31: "Correcto. Los defectos cardíacos congénitos son la complicación orgánica más frecuente en Down.",
+            q32: "Correcto. El pronóstico vital en Edwards es grave con alta mortalidad en los primeros meses.",
+            q33: "Correcto. La holoprosencefalia es la falla de división prosencefálica típica de Patau.",
+            q34: "Correcto. El linfedema congénito en manos y pies es altamente característico del Turner neonatal.",
+            q35: "Correcto. Klinefelter cursa con hipogonadismo hipergonadotrópico por falla testicular primaria.",
+            q36: "Correcto. La heparina de sodio es el anticoagulante de elección para estudios citogenéticos y cultivos de sangre periférica, ya que no interfiere ni inhibe la división mitótica a diferencia del EDTA.",
+            q37: "Correcto. La severidad del mosaicismo depende del porcentaje y los tejidos involucrados.",
+            q38: "Correcto. 'der' significa cromosoma derivativo por reordenamiento estructural.",
+            q39: "Correcto. La amniocentesis analiza amniocitos fetales viables.",
+            q40: "Correcto. Los progenitores portadores de translocaciones robertsonianas tienen riesgo elevado de recurrencia.",
+            q41: "Correcto. Puente nasal deprimido y pliegue palmar único definen Down.",
+            q42: "Correcto. Dedos superpuestos en puño cerrado son sello de Edwards.",
+            q43: "Correcto. Cuello alado y linfedema son cardinales en Turner.",
+            q44: "Correcto. Llanto de gato corresponde a deleción 5p.",
+            q45: "Correcto. 47,XXX y 48,XXXY poseen ambos 3 cromosomas X, dando exactamente 2 cuerpos de Barr (3 - 1 = 2).",
+            q46: "Correcto. El mosaicismo placentario confinado (CPM) se limita a vellosidades coriales.",
+            q47: "Correcto. El isocromosoma i(X)(q10) causa monosomía parcial 5p y trisomía parcial q.",
+            q48: "Correcto. BCR-ABL1 se origina por la translocación recíproca t(9;22).",
+            q49: "Correcto. Llanto de gato corresponde a 46,XX,del(5)(p15).",
+            q50: "Correcto. El cariotipo permite diagnóstico certero, pronóstico y asesoramiento genético familiar."
+        };
+
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            let score = 0;
+            const total = 50;
+
+            for (let i = 1; i <= total; i++) {
+                const qKey = `q${i}`;
+                const selected = document.querySelector(`input[name="${qKey}"]:checked`);
+                const feedbackEl = document.getElementById(`feedback-${qKey}`);
+                feedbackEl.classList.remove('hidden');
+
+                if (selected) {
+                    if (selected.value === correctAnswers[qKey]) {
+                        score++;
+                        feedbackEl.textContent = "✔ " + explanations[qKey];
+                        feedbackEl.className = "mt-3 text-sm font-medium text-teal-400 bg-teal-950/40 p-2.5 rounded-lg border border-teal-800/50";
+                    } else {
+                        feedbackEl.textContent = "✖ Incorrecto. " + explanations[qKey];
+                        feedbackEl.className = "mt-3 text-sm font-medium text-rose-400 bg-rose-950/40 p-2.5 rounded-lg border border-rose-800/50";
+                    }
+                } else {
+                    feedbackEl.textContent = "✖ No respondida. " + explanations[qKey];
+                    feedbackEl.className = "mt-3 text-sm font-medium text-amber-400 bg-amber-950/40 p-2.5 rounded-lg border border-amber-800/50";
+                }
+            }
+
+            const percentage = Math.round((score / total) * 100);
+            const resultsCard = document.getElementById('resultsCard');
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            const feedbackMessage = document.getElementById('feedbackMessage');
+
+            scoreDisplay.textContent = `${score} / ${total} (${percentage}%)`;
+            resultsCard.classList.remove('hidden');
+
+            if (percentage >= 90) {
+                feedbackMessage.textContent = "¡Nivel sobresaliente! Dominas a la perfección la correlación fenotipo-cariotipo, las nomenclaturas ISCN y la corrección de cuerpos de Barr.";
+            } else if (percentage >= 70) {
+                feedbackMessage.textContent = "¡Excelente desempeño! Tienes bases sólidas en citogenética médica, aunque algunos casos clínicos requirieron mayor precisión.";
+            } else {
+                feedbackMessage.textContent = "Evaluación concluida. Te sugerimos repasar la correlación clínica de las trisomías, el recuento de cromatina sexual y las fórmulas ISCN.";
+            }
+
+            resultsCard.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
